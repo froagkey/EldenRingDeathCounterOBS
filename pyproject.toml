@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elden-ring-death-counter"
+version = "0.1.0"
+description = "Continuously write an Elden Ring save's death count for OBS"
+requires-python = ">=3.11"
+
+[project.scripts]
+elden-ring-death-counter = "death_counter.cli:main"
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.0"]
+
+[tool.setuptools.packages.find]
+include = ["death_counter*"]

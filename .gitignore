@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+death_count.txt
+.*.tmp
+.venv-build/
+build/
+dist/
