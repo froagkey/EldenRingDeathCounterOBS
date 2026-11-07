@@ -9,11 +9,17 @@ Before parsing, it waits for the save to stop changing, takes a consistent
 read, and validates the selected slot's MD5 checksum. Incomplete autosaves are
 retried instead of being displayed.
 
+## Standalone release
+
+Download and run `EldenRingDeathCounter.exe` from the latest GitHub release
+for the simplest setup. The standalone executable includes everything needed;
+end users do not need to install Python or any packages.
+
 ## Requirements
 
 - Windows
-- Python 3.11 or newer (`py --version`)
 - The PC version of Elden Ring
+- Python 3.11 or newer (`py --version`) only when running from source
 
 There are no third-party Python dependencies.
 
